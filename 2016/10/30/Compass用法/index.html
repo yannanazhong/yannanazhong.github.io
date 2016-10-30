@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yannanazhong.github.io">
+  <title>Compass+Sass用法 | 那小爷的杂草窝</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Compass&amp;#x5B98;&amp;#x7F51;&amp;#xFF1A;compass
+&amp;#x597D;&amp;#x8BB0;&amp;#x6027;&amp;#x4E0D;&amp;#x5982;&amp;#x70C2;&amp;#x7B14;&amp;#x5934;&amp;#x2665;&amp;#x4ECA;&amp;#x5929;&amp;#x5403;&amp;#x4E0B;&amp;#x4E86;&amp;#x5F88;&amp;#x591A;&amp;#x8349;&amp;#xFF0C;&amp;#x4E0D;&amp;#x77E5;&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Compass+Sass用法">
+<meta property="og:url" content="http://yannanazhong.github.io/2016/10/30/Compass用法/index.html">
+<meta property="og:site_name" content="那小爷的杂草窝">
+<meta property="og:description" content="Compass&amp;#x5B98;&amp;#x7F51;&amp;#xFF1A;compass
+&amp;#x597D;&amp;#x8BB0;&amp;#x6027;&amp;#x4E0D;&amp;#x5982;&amp;#x70C2;&amp;#x7B14;&amp;#x5934;&amp;#x2665;&amp;#x4ECA;&amp;#x5929;&amp;#x5403;&amp;#x4E0B;&amp;#x4E86;&amp;#x5F88;&amp;#x591A;&amp;#x8349;&amp;#xFF0C;&amp;#x4E0D;&amp;#x77E5;&amp;">
+<meta property="og:image" content="http://ofrgm88ft.bkt.clouddn.com/blogImg4.png">
+<meta property="og:updated_time" content="2016-10-30T15:18:44.693Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Compass+Sass用法">
+<meta name="twitter:description" content="Compass&amp;#x5B98;&amp;#x7F51;&amp;#xFF1A;compass
+&amp;#x597D;&amp;#x8BB0;&amp;#x6027;&amp;#x4E0D;&amp;#x5982;&amp;#x70C2;&amp;#x7B14;&amp;#x5934;&amp;#x2665;&amp;#x4ECA;&amp;#x5929;&amp;#x5403;&amp;#x4E0B;&amp;#x4E86;&amp;#x5F88;&amp;#x591A;&amp;#x8349;&amp;#xFF0C;&amp;#x4E0D;&amp;#x77E5;&amp;">
+<meta name="twitter:image" content="http://ofrgm88ft.bkt.clouddn.com/blogImg4.png">
+  
+    <link rel="alternative" href="/atom.xml" title="那小爷的杂草窝" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/assets/img/favicon.ico">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/assets/blogImg/me.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">那小爷</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">嗯~草味很足</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="https://yannanazhong.github.io">窝 Home</a></li>
+	        
+				<li><a href="/photos">杂草 Weeds</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有 All</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签 Label</a>
+    			
+    			
+            
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">我 Me</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/yannanazhong" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="https://yannanazhong.github.io/" title="weibo">weibo</a>
+		        
+					<a class="mail" target="_blank" href="mailto:nana0762@163.com" title="mail">mail</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">那小爷</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/assets/blogImg/me.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">那小爷</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">嗯~草味很足</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="https://yannanazhong.github.io">窝 Home</a></li>
+		        
+					<li><a href="/photos">杂草 Weeds</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/yannanazhong" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://yannanazhong.github.io/" title="weibo">weibo</a>
+			        
+						<a class="mail" target="_blank" href="mailto:nana0762@163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-Compass用法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Compass+Sass用法
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://ofrgm88ft.bkt.clouddn.com/blogImg4.png" alt="compass"><br>Compass&#x5B98;&#x7F51;&#xFF1A;<a href="http://compass-style.org/" target="_blank" rel="external">compass</a></p>
+<p>&#x597D;&#x8BB0;&#x6027;&#x4E0D;&#x5982;&#x70C2;&#x7B14;&#x5934;&#x2665;&#x4ECA;&#x5929;&#x5403;&#x4E0B;&#x4E86;&#x5F88;&#x591A;&#x8349;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x81EA;&#x5DF1;&#x5438;&#x6536;&#x4E86;&#x591A;&#x5C11;&#xFF0C;&#x591A;&#x5B66;&#x591A;&#x60F3;&#x591A;&#x7EC3;&#x2026;</p>
+<hr>
+<blockquote>
+<p>Compass&#x662F;Sass&#x5DE5;&#x5177;&#x5E93;&#xFF0C;&#x6709;&#x70B9;&#x50CF;Javascript&#x548C;jQuery</p>
+</blockquote>
+<p>&#x4E0B;&#x9762;&#x5F00;&#x59CB;&#x57FA;&#x672C;&#x7528;&#x6CD5;&#x8BF4;&#x660E;&#xFF1A;</p>
+<a id="more"></a>
+<blockquote>
+<p>compass&#x642D;&#x5EFA;&#x9879;&#x76EE;</p>
+</blockquote>
+<p>1.&#x521B;&#x5EFA;&#x9879;&#x76EE;&#xFF0C;&#x5728;ruby&#x4E2D;&#x8F93;&#x5165;&#x547D;&#x4EE4;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">compass create sass</div></pre></td></tr></table></figure></p>
+<p>,&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x5C31;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;sass&#x5B50;&#x76EE;&#x5F55;</p>
+<p>2.<code>cd myproject</code>&#x8FDB;&#x5165;&#x8BE5;&#x76EE;&#x5F55;</p>
+<p>3.&#x76EE;&#x5F55;&#x91CC;&#x9762;&#x5206;&#x522B;&#x6709;config.rb&#x6587;&#x4EF6;(&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;),&#x5B50;&#x76EE;&#x5F55;sass(&#x524D;&#x8005;&#x5B58;&#x653E;Sass&#x6E90;&#x6587;&#x4EF6;)&#x548C;stylesheets(&#x540E;&#x8005;&#x5B58;&#x653E;&#x7F16;&#x8BD1;&#x540E;&#x7684;css&#x6587;&#x4EF6;)</p>
+<hr>
+<blockquote>
+<p>Sass&#x8BED;&#x6CD5;&#x57FA;&#x7840;</p>
+</blockquote>
+<p>1.scss&#x548C;sass&#x6587;&#x4EF6;&#x8F6C;&#x6362;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sass-convert main.scss main.sass[scss&#x8F6C;sass]</div></pre></td></tr></table></figure></p>
+<p>2.<strong>&#x5F00;&#x542F;&#x76D1;&#x542C;</strong>&#xFF1A;&#x8FDB;&#x5165;sass&#x76EE;&#x5F55; <code>cd sass</code>,&#x8F93;&#x5165; <code>compass watch</code></p>
+<p>3.&#x53D8;&#x91CF;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//**$**&#x58F0;&#x660E;</div><div class="line"><span class="variable">$headline</span>-ff:{Arial,sans-serif;}</div><div class="line">//&#x5F15;&#x7528;</div><div class="line">```bash</div><div class="line">.headline{font-family:<span class="variable">$headline</span>-ff;}</div></pre></td></tr></table></figure>
+<p>3-1.&#x7C7B;&#x5D4C;&#x5957;&#x8BED;&#x6CD5;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.main-sec{</div><div class="line">   font-family: <span class="variable">$main</span>-sec-ff;</div><div class="line">   .headline {</div><div class="line">      font-family: <span class="variable">$main</span>-sec-ff;</div><div class="line">   }</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>3-2.&#x5C5E;&#x6027;&#x5D4C;&#x5957;&#x8BED;&#x6CD5;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.headline {</div><div class="line">    font:{</div><div class="line">      family:<span class="variable">$main</span>-sec-ff;</div><div class="line">      size:16px;</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>3-3.&#x7236;&#x7C7B;&#x9009;&#x62E9;&#x5668;(&#x81EA;&#x8EAB;&#x8C03;&#x7528;)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">a {</div><div class="line">    &amp;:hover {</div><div class="line">     color:red;</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>4.@import&#x5F15;&#x5165;</p>
+<blockquote>
+<blockquote>
+<p>1.&#x65B0;&#x5EFA;&#x5C40;&#x90E8;&#x6587;&#x4EF6;<em>variables.scss<br>*//&#x4EE5;&#x201D;</em>&#x201C;&#x5F00;&#x5934;&#x7684;&#x5C40;&#x90E8;&#x6587;&#x4EF6;,&#x4E0D;&#x4F1A;&#x88AB;&#x7F16;&#x8BD1;&#x5230;css;&#x4F5C;&#x4E3A;&#x5F15;&#x5165;&#x6587;&#x4EF6;&#x4F7F;&#x7528;;*<br>2.@import&#x5F15;&#x5165;&#x6587;&#x4EF6; @improt &#x201C;variables&#x201D;</p>
+</blockquote>
+</blockquote>
+<p>5.&#x6CE8;&#x91CA;</p>
+<blockquote>
+<blockquote>
+<p>1.&#x4EE5;&#x201D;/**/&#x201C;&#x6CE8;&#x91CA;&#x7684;&#x5185;&#x5BB9;&#x6700;&#x540E;&#x88AB;&#x8F93;&#x51FA;&#x5230;&#x4E86;&#x5BF9;&#x5E94;&#x7684;css&#x6587;&#x4EF6;&#x4E2D;;<br>2.&#x4EE5;&#x201D;//&#x201C;&#x6CE8;&#x91CA;&#x7684;&#x5185;&#x5BB9;&#x5219;&#x6CA1;&#x6709;&#x8F93;&#x51FA;&#x5230;&#x5BF9;&#x5E94;&#x7684;css&#x6587;&#x4EF6;;</p>
+</blockquote>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>Sass&#x8BED;&#x6CD5;&#x8FDB;&#x9636;</strong></p>
+</blockquote>
+<p>1.<strong>@mixin</strong> &#x58F0;&#x660E;,<strong>@include</strong>&#x8C03;&#x7528;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">@mixin col-6{</div><div class="line">    width:50%;</div><div class="line">    <span class="built_in">float</span>:left;</div><div class="line">}</div><div class="line">.main-content{</div><div class="line">    @include col-6;</div><div class="line">    &amp;&#xFF1A;hover{</div><div class="line">        background-color:<span class="comment">#f5f5f5;</span></div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>2.@mixin&#x5305;&#x542B;&#x53C2;&#x6570;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">@mixin col(<span class="variable">$width</span>:50%){</div><div class="line">    width:<span class="variable">$width</span>;</div><div class="line">    <span class="built_in">float</span>:right;</div><div class="line">}</div><div class="line">.main-content{</div><div class="line">    @include col(60%)</div><div class="line">};</div><div class="line"></div><div class="line">css:</div><div class="line">.main-content{</div><div class="line">    width:60%;</div><div class="line">    <span class="built_in">float</span>:right;</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>3.<strong>@extend</strong>&#x7EE7;&#x627F;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">.error{</div><div class="line">    color:<span class="comment">#f00;</span></div><div class="line">}</div><div class="line">%error{</div><div class="line">  backgroud:<span class="comment">#382;  </span></div><div class="line">}</div><div class="line">.serious-error{</div><div class="line">    @extend .error;</div><div class="line">    @extend:error;</div><div class="line">    border:1px solid <span class="comment">#000;</span></div><div class="line">}</div></pre></td></tr></table></figure></p>
+<hr>
+<blockquote>
+<p><strong>Sass&#x9AD8;&#x7EA7;&#x8BED;&#x6CD5;</strong></p>
+</blockquote>
+<p>1.<strong>@media</strong><br><em>//&#x5728;&#x751F;&#x6210;css&#x7684;&#x65F6;&#x5019;,media query&#x624D;&#x4F1A;&#x88AB;&#x63D0;&#x5230;&#x6837;&#x5F0F;&#x7684;&#x6700;&#x9AD8;&#x7EA7;</em><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">@mixin col-sm(<span class="variable">$width</span>:50%){</div><div class="line">    @media (min-width:768px){</div><div class="line">        width:<span class="variable">$width</span>;</div><div class="line">        <span class="built_in">float</span>:left;</div><div class="line">    }</div><div class="line">}</div><div class="line">.main-content{</div><div class="line">    @inculde col-sm();</div><div class="line">}</div><div class="line"></div><div class="line">css:</div><div class="line">.main-content{</div><div class="line">    width:50%;</div><div class="line">    <span class="built_in">float</span>:left;</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>2.<strong>@at-root</strong>&#x6307;&#x4EE4;<br><em>at-root&#x548C;#{}&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x7236;&#xFF08;&#x5728;Sass&#x4E2D;&#x603B;&#x662F;&#x5F15;&#x7528;&#x7236;&#x9009;&#x62E9;&#x5668;&#xFF09;&#x548C;&#x63D2;&#x503C;</em><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">.main-content{</div><div class="line">    font-size:12px;</div><div class="line">    @at-root{</div><div class="line">        .main-content-header{</div><div class="line">            font-size:16px;</div><div class="line">        }</div><div class="line">        .main-content-footer{</div><div class="line">            font-size:14px;</div><div class="line">        }</div><div class="line">    }</div><div class="line">}</div><div class="line"></div><div class="line">css:</div><div class="line">.mian-content{</div><div class="line">    font-size:12px;</div><div class="line">}</div><div class="line">.main-content-header{</div><div class="line">    font-size:16px;</div><div class="line">}</div><div class="line">.main-content-footer{</div><div class="line">    font-size:14px;</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>3.<strong>if</strong>&#x64CD;&#x4F5C;&#x7B26;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">@mixin col<span class="_">-s</span>(<span class="variable">$width</span>:50%){</div><div class="line">    //<span class="built_in">type</span>-of()&#x68C0;&#x6D4B;<span class="variable">$width</span>&#x662F;&#x5426;&#x662F;&#x6570;&#x503C;&#x7C7B;&#x578B;</div><div class="line">    @<span class="keyword">if</span> <span class="built_in">type</span>-of(<span class="variable">$width</span>)!=number{</div><div class="line">        @error <span class="string">&quot;<span class="variable">$width</span> is not a num&quot;</span></div><div class="line">    }</div><div class="line">    </div><div class="line">    //&#x7528;unitless()&#x65B9;&#x6CD5;:&#x5224;&#x65AD;&#x5F53;&#x524D;&#x7684;&#x6570;&#x503C;&#x662F;&#x5426;&#x8DDF;&#x6709;&#x5355;&#x4F4D;</div><div class="line">    @<span class="keyword">if</span> not unitless(<span class="variable">$width</span>){</div><div class="line">        //&#x5982;&#x679C;&#x5355;&#x4F4D;&#x4E0D;&#x662F;%</div><div class="line">        @<span class="keyword">if</span> unit(<span class="variable">$width</span>) != <span class="string">&quot;%&quot;</span>{</div><div class="line">            @error <span class="string">&quot;<span class="variable">$width</span>&#x5355;&#x4F4D;&#x4E0D;&#x662F;%&quot;</span></div><div class="line">        }</div><div class="line">    } @<span class="keyword">else</span> {</div><div class="line">        @warn <span class="string">&quot;<span class="variable">$width</span>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#x7C7B;&#x578B;&quot;</span></div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<hr>
+<blockquote>
+<p>Sass&#x8F93;&#x51FA;&#x683C;&#x5F0F;[config.rb&#x914D;&#x7F6E;&#x6587;&#x4EF6;]<br>1.output_style = :expanded or :nested or :compact or :compressed</p>
+<blockquote>
+<p>0.:expanded   =&gt; &#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x662F;&#x5C55;&#x5F00;&#x7684;;<br>1.:nested     =&gt; &#x6839;&#x636E;&#x5D4C;&#x5957;,&#x5728;&#x8F93;&#x51FA;&#x7684;&#x65F6;&#x5019;&#x4EE3;&#x7801;&#x7F29;&#x8FDB;;<br>2.:compact    =&gt; &#x5C06;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x6C47;&#x603B;&#x5230;&#x4E00;&#x884C;;&#x9009;&#x62E9;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x66F4;&#x6E05;&#x6670;;<br>3.:compressed =&gt; &#x5C06;&#x6240;&#x6709;&#x7684;&#x4EE3;&#x7801;&#x538B;&#x7F29;&#x4EE5;&#x5360;&#x7528;&#x6700;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;;</p>
+</blockquote>
+</blockquote>
+<hr>
+<p>[^footnote]: Night World!</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/30/Compass用法/" class="archive-article-date">
+  	<time datetime="2016-10-30T13:51:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-30</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Compass用法/">Compass用法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/好草/">好草</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/10/30/Sass-Sublime/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Ruby+Compass+Sass+Sublime</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 那小爷
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/Compass用法/" style="font-size: 10px;">Compass用法</a> <a href="/tags/Sass/" style="font-size: 10px;">Sass</a> <a href="/tags/ckeditor/" style="font-size: 10px;">ckeditor</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/割草/" style="font-size: 20px;">割草</a> <a href="/tags/好草/" style="font-size: 10px;">好草</a> <a href="/tags/安装教程/" style="font-size: 15px;">安装教程</a> <a href="/tags/网站编辑器/" style="font-size: 10px;">网站编辑器</a>
+    			</div>
+    	</section>
+    
+
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">前端小草</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
